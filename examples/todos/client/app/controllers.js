@@ -1,4 +1,7 @@
-function MainCtrl($scope,$rootScope,$routeParams,$location,$timeout){
+MainCtrl = [
+	"$scope","$rootScope","$routeParams",
+	"$location","$timeout",
+	function($scope,$rootScope,$routeParams,$location,$timeout){
 	Meteor.subscribe('lists');
 	Meteor.subscribe('todos');
 	$scope.Lists = new Meteor.AngularCollection("lists",$scope);
@@ -82,4 +85,4 @@ function MainCtrl($scope,$rootScope,$routeParams,$location,$timeout){
 		}
 		return false;
 	}
-}
+}]
