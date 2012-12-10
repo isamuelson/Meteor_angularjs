@@ -1,5 +1,6 @@
 #Angularjs in Meteor
 ##How to use it
+Meteorite package works again.
 Add these files to the packages directory of your meteor install in a directory called angularjs. Then in your project do:
 
     meteor add angularjs
