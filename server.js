@@ -7,7 +7,7 @@ __meteor_bootstrap__.app
       // Need to create a Fiber since we're using synchronous http calls
       Fiber(function() {
       	try{
-      	 var code = fs.readFileSync(path.resolve('bundle/app.html'));
+      	 var code = fs.readFileSync(path.resolve('app.html'));
         }catch(e){
           var code = fs.readFileSync(path.resolve('.meteor/local/build/app.html'));
         }
